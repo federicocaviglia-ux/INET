@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federico Caviglia</title>
+  <title>Federico Caviglia | Portal docente y tecnológico</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f4f6f8;
       color: #1f2933;
       line-height: 1.6;
@@ -17,57 +21,145 @@
     header {
       background: #102a43;
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
     }
 
     header p {
-      font-size: 1.1rem;
-      margin-top: 10px;
+      font-size: 1.2rem;
+      margin-top: 12px;
+      color: #d9e2ec;
+    }
+
+    nav {
+      background: #243b53;
+      padding: 12px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     main {
-      max-width: 900px;
+      max-width: 1050px;
       margin: 30px auto;
       padding: 0 20px;
     }
 
     section {
       background: white;
-      margin-bottom: 20px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      margin-bottom: 25px;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
     }
 
     h2 {
       color: #102a43;
       margin-top: 0;
+      border-bottom: 2px solid #d9e2ec;
+      padding-bottom: 8px;
     }
 
-    .proyectos {
+    h3 {
+      color: #243b53;
+      margin-bottom: 8px;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
     }
 
     .tarjeta {
       border: 1px solid #d9e2ec;
-      border-radius: 10px;
-      padding: 15px;
+      border-radius: 12px;
+      padding: 18px;
       background: #f8fafc;
+    }
+
+    .tarjeta p {
+      margin-bottom: 8px;
+    }
+
+    .estado {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 8px;
+      background: #d9e2ec;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: #102a43;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid #d9e2ec;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #243b53;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    a {
+      color: #0b7285;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 30px 20px;
       color: #52606d;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      section {
+        padding: 22px;
+      }
     }
   </style>
 </head>
@@ -78,47 +170,338 @@
     <p>Portal docente, académico y tecnológico en construcción.</p>
   </header>
 
+  <nav>
+    <a href="#presentacion">Presentación</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#certificaciones">Certificaciones</a>
+    <a href="#tecnologias">Tecnologías</a>
+    <a href="#registro">Registro</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="presentacion">
       <h2>Presentación</h2>
+
+      <p class="intro">
+        Este sitio reúne el recorrido, los proyectos, los trabajos académicos, las certificaciones
+        y las exploraciones educativas de Federico Caviglia, profesor en formación en Ciencias Informáticas.
+      </p>
+
       <p>
-        Este sitio reúne mi recorrido, proyectos, trabajos académicos y exploraciones educativas
-        vinculadas a la enseñanza, la tecnología, la inteligencia artificial y la producción de materiales didácticos.
+        El portal funciona como un espacio de organización, publicación y registro de propuestas vinculadas
+        a la enseñanza, la tecnología, la inteligencia artificial, la didáctica y la producción de materiales educativos.
       </p>
     </section>
 
-    <section>
+    <section id="biografia">
+      <h2>Biografía</h2>
+
+      <p>
+        Federico Caviglia desarrolla su trayectoria en el cruce entre informática, educación y producción de recursos
+        didácticos. Luego de una extensa experiencia en el mundo del trabajo y el emprendimiento, orienta actualmente
+        su formación y práctica hacia la docencia en Ciencias Informáticas.
+      </p>
+
+      <p>
+        Su interés por la informática comenzó tempranamente y hoy se articula con una preocupación pedagógica:
+        cómo enseñar mejor, cómo acompañar procesos reales de aprendizaje y cómo utilizar la tecnología sin perder
+        de vista el lugar central del docente y de los estudiantes.
+      </p>
+    </section>
+
+    <section id="formacion">
+      <h2>Formación</h2>
+
+      <p>
+        Este portal reúne avances vinculados al Profesorado en Ciencias Informáticas, prácticas docentes,
+        cursos de actualización, certificaciones y trabajos desarrollados en distintas áreas de la formación.
+      </p>
+
+      <ul>
+        <li>Didáctica y práctica docente.</li>
+        <li>Programación y bases de datos.</li>
+        <li>Tecnología educativa e inteligencia artificial.</li>
+        <li>Neurociencias, inclusión y aprendizaje.</li>
+        <li>Derecho educativo, ciudadanía digital y ética.</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
       <h2>Proyectos destacados</h2>
 
-      <div class="proyectos">
-        <div class="tarjeta">
+      <div class="grid">
+        <article class="tarjeta">
           <h3>VIRGILIO</h3>
-          <p>Plataforma educativa experimental de acompañamiento, registro y recorridos personalizados.</p>
-        </div>
+          <p>
+            Plataforma educativa experimental de acompañamiento, registro y recorridos personalizados.
+            Explora formas de guiar procesos de aprendizaje mediante actividades encadenadas,
+            formularios, códigos QR, observación docente y apoyo de inteligencia artificial.
+          </p>
+          <span class="estado">Prototipo inicial</span>
+        </article>
 
-        <div class="tarjeta">
+        <article class="tarjeta">
           <h3>Sastrería Didáctica</h3>
-          <p>Diseño de materiales educativos a medida para grupos, docentes y necesidades concretas.</p>
-        </div>
+          <p>
+            Línea de trabajo orientada al diseño de materiales educativos a medida:
+            recursos pensados para grupos concretos, necesidades reales de aula y propuestas pedagógicas específicas.
+          </p>
+          <span class="estado">En desarrollo</span>
+        </article>
 
-        <div class="tarjeta">
+        <article class="tarjeta">
           <h3>Intervenciones con IA</h3>
-          <p>Experiencias de acompañamiento educativo mediante inteligencia artificial y observación docente.</p>
-        </div>
+          <p>
+            Experiencias de uso de inteligencia artificial como herramienta de acompañamiento,
+            escritura guiada, apoyo a estudiantes, análisis docente y diseño de recorridos educativos.
+          </p>
+          <span class="estado">Exploratorio</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>X-ON / NEX-O</h3>
+          <p>
+            Proyecto exploratorio sobre entornos de conversación entre personas e inteligencias artificiales
+            especializadas, pensado como laboratorio de colaboración, análisis y producción educativa.
+          </p>
+          <span class="estado">Exploración técnica</span>
+        </article>
       </div>
     </section>
 
-    <section>
-      <h2>Certificaciones</h2>
+    <section id="certificaciones">
+      <h2>Certificaciones y formación complementaria</h2>
+
       <p>
-        Registro en construcción de cursos, constancias y certificaciones vinculadas a educación,
-        tecnología, programación, IA, STEM y didáctica.
+        Esta sección reúne cursos, certificaciones y constancias vinculadas a educación, tecnología,
+        programación, inteligencia artificial, STEM, accesibilidad, ciudadanía digital y didáctica.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Certificación</th>
+            <th>Carga horaria</th>
+            <th>Área</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2026</td>
+            <td>Ceibal</td>
+            <td>Enseñanza de la probabilidad con herramientas digitales</td>
+            <td>45 h</td>
+            <td>Matemática / Tecnología educativa</td>
+          </tr>
+
+          <tr>
+            <td>2026</td>
+            <td>Ceibal</td>
+            <td>Introducción a la programación con Python</td>
+            <td>30 h</td>
+            <td>Programación / Python</td>
+          </tr>
+
+          <tr>
+            <td>2026</td>
+            <td>Ceibal</td>
+            <td>Introducción al desarrollo web</td>
+            <td>30 h</td>
+            <td>Desarrollo web</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Inventario completo en construcción:
+        <a href="https://docs.google.com/spreadsheets/d/1oeH9O1ep5C_PDupWGj2l1Y02eoMAzsBWPHKDzX33KPU/edit?usp=sharing" target="_blank">
+          ver planilla de certificados y constancias
+        </a>.
+      </p>
+    </section>
+
+    <section id="tecnologias">
+      <h2>Tecnologías integradas al portal</h2>
+
+      <p>
+        Esta sección registra las herramientas y servicios que se integran progresivamente
+        en la construcción del portal. El objetivo es documentar no solo los resultados,
+        sino también el proceso técnico utilizado para diseñar, publicar, organizar y mantener
+        este sitio.
+      </p>
+
+      <div class="grid">
+        <article class="tarjeta">
+          <h3>HTML</h3>
+          <p>
+            Lenguaje utilizado para estructurar el contenido principal del portal:
+            secciones, encabezados, tablas, enlaces y tarjetas.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>CSS</h3>
+          <p>
+            Tecnología utilizada para definir el diseño visual del sitio:
+            colores, tipografía, tarjetas, espaciado, sombras y adaptación a distintos tamaños de pantalla.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>JavaScript</h3>
+          <p>
+            Reservado para futuras funciones interactivas, como filtros de certificados,
+            buscadores internos, menús dinámicos o carga de datos desde archivos externos.
+          </p>
+          <span class="estado">Pendiente</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Visual Studio Code</h3>
+          <p>
+            Entorno local de edición utilizado para escribir, modificar y organizar el código del portal
+            desde la computadora personal.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Git</h3>
+          <p>
+            Sistema de control de versiones utilizado para registrar cambios,
+            crear commits y conservar la evolución técnica del sitio.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>GitHub</h3>
+          <p>
+            Repositorio remoto donde se guarda el código del portal y desde donde Netlify toma los cambios
+            para publicar la web.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Netlify</h3>
+          <p>
+            Servicio utilizado para publicar automáticamente el sitio web cada vez que se actualiza
+            el repositorio de GitHub.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Google Drive</h3>
+          <p>
+            Espacio de respaldo documental para certificados, constancias,
+            trabajos académicos y materiales educativos.
+          </p>
+          <span class="estado">En integración</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Google Sheets</h3>
+          <p>
+            Herramienta utilizada para organizar el inventario de certificados y constancias
+            en una planilla actualizable.
+          </p>
+          <span class="estado">En integración</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>ChatGPT</h3>
+          <p>
+            Herramienta de apoyo para diseño, redacción, planificación, revisión pedagógica,
+            asistencia técnica y organización del ecosistema del portal.
+          </p>
+          <span class="estado">Centro de operaciones</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Gemini educativo</h3>
+          <p>
+            Herramienta prevista como apoyo complementario para consulta, organización documental
+            y trabajo dentro del ecosistema educativo.
+          </p>
+          <span class="estado">Exploratorio</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Cuenta educativa Ceibal</h3>
+          <p>
+            Identidad institucional utilizada para articular servicios, documentos,
+            certificaciones y herramientas educativas.
+          </p>
+          <span class="estado">Integrado</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="trabajos">
+      <h2>Trabajos académicos</h2>
+
+      <p>
+        Esta sección estará dedicada a organizar trabajos, reflexiones, informes y producciones realizadas
+        en el marco de la formación docente.
+      </p>
+
+      <ul>
+        <li>Didáctica.</li>
+        <li>Neurociencias.</li>
+        <li>Derecho Educativo.</li>
+        <li>Programación II.</li>
+        <li>Base de Datos.</li>
+        <li>Civilización y Cultura.</li>
+        <li>Educación para la Paz.</li>
+        <li>Tecnologías Multimediales.</li>
+      </ul>
+    </section>
+
+    <section id="materiales">
+      <h2>Materiales didácticos</h2>
+
+      <p>
+        El portal también funcionará como espacio de referencia para materiales de clase, planificaciones,
+        actividades impresas, recursos digitales, propuestas con tecnología y materiales diseñados para contextos
+        educativos concretos.
+      </p>
+    </section>
+
+    <section id="registro">
+      <h2>Investigación, registro e inteligencia artificial</h2>
+
+      <p>
+        Una parte central del trabajo consiste en registrar procesos, observar prácticas, revisar intervenciones
+        y ajustar propuestas a partir de la experiencia real. Este sitio permitirá reunir esas huellas de trabajo
+        y organizarlas progresivamente.
+      </p>
+
+      <p>
+        En este eje se ubican las exploraciones sobre pedagogía del registro, recorridos personalizados,
+        acompañamiento con inteligencia artificial, diseño de materiales y observación docente.
+      </p>
+    </section>
+
+    <section id="estado">
+      <h2>Estado del portal</h2>
+
+      <p>
+        Este portal se encuentra en una etapa inicial. Su primera función es ordenar el ecosistema de trabajo
+        y ofrecer una puerta de entrada pública a los proyectos, certificaciones, materiales y registros
+        en desarrollo.
       </p>
     </section>
   </main>
 
   <footer>
-    Federico Caviglia · Montevideo, Uruguay · Portal en construcción
+    Federico Caviglia · Montevideo, Uruguay · Portal docente, académico y tecnológico en construcción.
   </footer>
 </body>
 </html>
