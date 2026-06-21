@@ -3,8 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federico Caviglia | Portal docente y tecnológico</title>
+  <title>Federico Caviglia</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102a43;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #102a43;
+      margin-top: 0;
+    }
+
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .tarjeta {
+      border: 1px solid #d9e2ec;
+      border-radius: 10px;
+      padding: 15px;
+      background: #f8fafc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #52606d;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Federico Caviglia</h1>
@@ -14,142 +81,44 @@
   <main>
     <section>
       <h2>Presentación</h2>
-
       <p>
-        Este sitio reúne el recorrido, los proyectos, los trabajos académicos y las exploraciones educativas
-        de Federico Caviglia, profesor en formación en Ciencias Informáticas.
-      </p>
-
-      <p>
-        El portal funciona como un espacio de organización, publicación y registro de propuestas vinculadas
-        a la enseñanza, la tecnología, la inteligencia artificial, la didáctica y la producción de materiales educativos.
+        Este sitio reúne mi recorrido, proyectos, trabajos académicos y exploraciones educativas
+        vinculadas a la enseñanza, la tecnología, la inteligencia artificial y la producción de materiales didácticos.
       </p>
     </section>
 
     <section>
-      <h2>Biografía</h2>
+      <h2>Proyectos destacados</h2>
 
-      <p>
-        Federico Caviglia desarrolla su trayectoria en el cruce entre informática, educación y producción de recursos
-        didácticos. Luego de una extensa experiencia en el mundo del trabajo y el emprendimiento, orienta actualmente
-        su formación y práctica hacia la docencia en Ciencias Informáticas.
-      </p>
+      <div class="proyectos">
+        <div class="tarjeta">
+          <h3>VIRGILIO</h3>
+          <p>Plataforma educativa experimental de acompañamiento, registro y recorridos personalizados.</p>
+        </div>
 
-      <p>
-        Su interés por la informática comenzó tempranamente y hoy se articula con una preocupación pedagógica:
-        cómo enseñar mejor, cómo acompañar procesos reales de aprendizaje y cómo utilizar la tecnología sin perder
-        de vista el lugar central del docente y de los estudiantes.
-      </p>
+        <div class="tarjeta">
+          <h3>Sastrería Didáctica</h3>
+          <p>Diseño de materiales educativos a medida para grupos, docentes y necesidades concretas.</p>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Intervenciones con IA</h3>
+          <p>Experiencias de acompañamiento educativo mediante inteligencia artificial y observación docente.</p>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Formación</h2>
-
+      <h2>Certificaciones</h2>
       <p>
-        Este portal reúne avances vinculados al Profesorado en Ciencias Informáticas, prácticas docentes,
-        cursos de actualización, certificaciones y trabajos desarrollados en distintas áreas de la formación.
-      </p>
-
-      <ul>
-        <li>Didáctica y práctica docente.</li>
-        <li>Programación y bases de datos.</li>
-        <li>Tecnología educativa e inteligencia artificial.</li>
-        <li>Neurociencias, inclusión y aprendizaje.</li>
-        <li>Derecho educativo, ciudadanía digital y ética.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Proyectos</h2>
-
-      <article>
-        <h3>VIRGILIO</h3>
-        <p>
-          VIRGILIO es una plataforma educativa experimental de acompañamiento, registro y recorridos personalizados.
-          Su propósito es explorar formas de guiar procesos de aprendizaje mediante actividades encadenadas,
-          formularios, códigos QR, observación docente y apoyo de inteligencia artificial.
-        </p>
-      </article>
-
-      <article>
-        <h3>Sastrería Didáctica</h3>
-        <p>
-          Sastrería Didáctica es una línea de trabajo orientada al diseño de materiales educativos a medida:
-          recursos pensados para grupos concretos, necesidades reales de aula y propuestas pedagógicas específicas.
-        </p>
-      </article>
-
-      <article>
-        <h3>Intervenciones con IA</h3>
-        <p>
-          Este eje reúne experiencias de uso de inteligencia artificial como herramienta de acompañamiento,
-          escritura guiada, apoyo a estudiantes, análisis docente y diseño de recorridos educativos.
-        </p>
-      </article>
-
-      <article>
-        <h3>X-ON / NEX-O</h3>
-        <p>
-          Proyecto exploratorio sobre entornos de conversación entre personas e inteligencias artificiales
-          especializadas, pensado como laboratorio de colaboración, análisis y producción educativa.
-        </p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Trabajos académicos</h2>
-
-      <p>
-        Esta sección estará dedicada a organizar trabajos, reflexiones, informes y producciones realizadas
-        en el marco de la formación docente.
-      </p>
-
-      <ul>
-        <li>Didáctica.</li>
-        <li>Neurociencias.</li>
-        <li>Derecho Educativo.</li>
-        <li>Programación II.</li>
-        <li>Base de Datos.</li>
-        <li>Civilización y Cultura.</li>
-        <li>Educación para la Paz.</li>
-        <li>Tecnologías Multimediales.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Materiales didácticos</h2>
-
-      <p>
-        El portal también funcionará como espacio de referencia para materiales de clase, planificaciones,
-        actividades impresas, recursos digitales, propuestas con tecnología y materiales diseñados para contextos
-        educativos concretos.
-      </p>
-    </section>
-
-    <section>
-      <h2>Investigación y registro</h2>
-
-      <p>
-        Una parte central del trabajo consiste en registrar procesos, observar prácticas, revisar intervenciones
-        y ajustar propuestas a partir de la experiencia real. Este sitio permitirá reunir esas huellas de trabajo
-        y organizarlas progresivamente.
-      </p>
-    </section>
-
-    <section>
-      <h2>Estado del sitio</h2>
-
-      <p>
-        Este portal se encuentra en una etapa inicial. Su primera función es ordenar el ecosistema de trabajo
-        y ofrecer una puerta de entrada pública a los proyectos en desarrollo.
+        Registro en construcción de cursos, constancias y certificaciones vinculadas a educación,
+        tecnología, programación, IA, STEM y didáctica.
       </p>
     </section>
   </main>
 
   <footer>
-    <p>
-      Federico Caviglia · Portal docente, académico y tecnológico.
-    </p>
+    Federico Caviglia · Montevideo, Uruguay · Portal en construcción
   </footer>
 </body>
 </html>
